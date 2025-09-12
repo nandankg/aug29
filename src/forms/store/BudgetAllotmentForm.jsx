@@ -30,20 +30,14 @@ const bheadSubmit = (e)=> {
 
 const handleFilterChange = (e) => {
   ;
-  const {;
-  name, value
-
-} = e.target;               setFormData(prev => ({
+  const { name, value } = e.target;               setFormData(prev => ({
   ...prev,                    [name]: value
 }));
 };            // const filteredData = budgetData.filter(item =>             //     (!formData.budgetHead || item.budgetHead.toLowerCase().includes(formData.budgetHead.toLowerCase())) &&            //     (!formData.budgetSubhead || item.budgetSubhead.toLowerCase().includes(formData.budgetSubhead.toLowerCase())) &&            //     (!formData.financialYear || item.financialYear.includes(formData.financialYear)) &&            //     (!formData.department || item.department.toLowerCase().includes(formData.department.toLowerCase()))            // );            // 
 
 const handleChange = (e) => {
   ;
-  const {;
-  name, value
-
-} = e.target;    if(name="==""budgetHead"){
+  const { name, value } = e.target;    if(name="==""budgetHead"){
   setSubHead([])
 }    setFormData({
   ...formData,      [name]: value,

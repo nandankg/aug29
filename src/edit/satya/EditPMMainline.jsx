@@ -12,10 +12,7 @@ import React, {
   editData, fetchData
 } from "../../reducer/satya/PMMainlineReducer";const EditPMMainline = () => {
   ;
-  const navigate = useNavigate();  const location = useLocation();  const [date, setDate] = useState(new Date());  const {;
-  id
-
-} = location.state;  const dispatch = useDispatch();  const pmmainline = useSelector((state) => state.mainline || []);  const [slug, setSlug] = useState("");  const [items, setItems] = useState([]);  const itmm = pmmainline.data.data;  useEffect(() => {
+  const navigate = useNavigate();  const location = useLocation();  const [date, setDate] = useState(new Date());  const { id } = location.state;  const dispatch = useDispatch();  const pmmainline = useSelector((state) => state.mainline || []);  const [slug, setSlug] = useState("");  const [items, setItems] = useState([]);  const itmm = pmmainline.data.data;  useEffect(() => {
   
   dispatch(fetchData());    setItems(pmmainline.data.data);
 

@@ -18,10 +18,7 @@ import React, {
   MdPictureAsPdf
 } from "react-icons/md";const EditAfcPreventive = () => {
   ;
-  const navigate = useNavigate();  const location = useLocation();  const {;
-  id
-
-} = location.state;  const dispatch = useDispatch();  const afcpreventive = useSelector((state) => state.afcmaintenance);  const [slug, setSlug] = useState("");  const [items, setItems] = useState([]);  const itmm = afcpreventive.data.data;  useEffect(() => {
+  const navigate = useNavigate();  const location = useLocation();  const { id } = location.state;  const dispatch = useDispatch();  const afcpreventive = useSelector((state) => state.afcmaintenance);  const [slug, setSlug] = useState("");  const [items, setItems] = useState([]);  const itmm = afcpreventive.data.data;  useEffect(() => {
   
   dispatch(fetchData());    setItems(afcpreventive.data.data);
 
@@ -98,9 +95,7 @@ import React, {
   slug
 
 }`);
-};  const {;
-  toPDF, targetRef
-} = usePDF({
+};  const { toPDF, targetRef } = usePDF({
   filename: "afc_preventive_checklist_monthly(tom) form.pdf",
 });  const labels = [;    "Check Fixing & Alignment of all modules of TOM",    "Checking of all Cable connection and dressing",    "Check Date and Time",    "Check Lubrication of all locks with silicone oil",    "Cleaning of Opto sensor, Antenna, Token tray, Reject bin, Token box, Token Path, Token Banner",    "Cleaning of all modules of TOM ",    "Cleaning of Trench ",    "Card Reader Writer (CRW) Test",    "Printer Test",    "Passenger Display Unit (PDU) Test",    "Token Dispensing Machine (TDM) Test",    "Touch Screen Test",    "Counter Communication System Test",    "Keyboard, Mouse Test",    "Check LAN Status",    "Check Power Strip",  ];  const labels1 = [;    "Checking of all Cable connection and dressing",    "Tightening of all Electrical Connection in EC",    "Checking of all indicators",    "Cleaning of Electrical Cabinet",    "ELCB Push Button Operation",  ];  return (
         <>

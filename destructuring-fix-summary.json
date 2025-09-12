@@ -1,0 +1,78 @@
+{
+  "timestamp": "2025-09-12T16:41:28.534Z",
+  "totalFiles": 20,
+  "fixedFiles": 10,
+  "errors": [],
+  "fixes": [
+    {
+      "file": "./src/edit/isha/Edit PREVENTIVEMAINTENACE_CC_CCHS.jsx",
+      "fixes": [
+        "Fixed malformed destructuring assignments"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/edit/isha/EditAfcPreventiveHalfYearly.jsx",
+      "fixes": [
+        "Fixed malformed destructuring assignments"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/edit/isha/EditPMLOGBOOKMAAINLINE9.jsx",
+      "fixes": [
+        "Fixed malformed destructuring assignments"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/edit/pinki/EditAxleCounter.jsx",
+      "fixes": [
+        "Fixed malformed destructuring assignments"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/edit/satya/EditAfcPreventive.jsx",
+      "fixes": [
+        "Fixed malformed destructuring assignments"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/edit/satya/EditCabinetRecord.jsx",
+      "fixes": [
+        "Fixed malformed destructuring assignments"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/edit/satya/EditPMList.jsx",
+      "fixes": [
+        "Fixed malformed destructuring assignments"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/edit/satya/EditPMMainline.jsx",
+      "fixes": [
+        "Fixed malformed destructuring assignments"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/edit/store/StationEarningEdit.jsx",
+      "fixes": [
+        "Fixed malformed destructuring assignments"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/forms/store/BudgetAllotmentForm.jsx",
+      "fixes": [
+        "Fixed malformed destructuring assignments"
+      ],
+      "hasBackup": true
+    }
+  ]
+}

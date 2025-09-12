@@ -15,10 +15,7 @@ import React, {
   MdPictureAsPdf
 } from "react-icons/md";const EditPMList = () => {
   ;
-  const navigate = useNavigate();  const location = useLocation();  const [date, setDate] = useState(new Date());  const {;
-  id
-
-} = location.state;  const dispatch = useDispatch();  const pmlogbook = useSelector((state) => state.book || []);  const [slug, setSlug] = useState("");  const [items, setItems] = useState([]);  const itmm = pmlogbook.data.data;  useEffect(() => {
+  const navigate = useNavigate();  const location = useLocation();  const [date, setDate] = useState(new Date());  const { id } = location.state;  const dispatch = useDispatch();  const pmlogbook = useSelector((state) => state.book || []);  const [slug, setSlug] = useState("");  const [items, setItems] = useState([]);  const itmm = pmlogbook.data.data;  useEffect(() => {
   
   dispatch(fetchData());    setItems(pmlogbook.data.data);
 
@@ -68,9 +65,7 @@ import React, {
   slug
 
 }`);
-};  const labels = [;    "Fixing & Alignment of all modules of TVM/RCTM ",    "Checking of all Cable connection and dressing",    "Checking Silicon sealing of TVM/RCTM Cabinet",    "Checking of any opening inside TVM/RCTM cabinet",    "Checking of Power Supply and Battery",    "Check Lubrication of all locks with silicone oil",    "Check Station ID",    "Check Device ID",    "Check Date and Time",    "Cleaning of all modules of TVM/RCTM",    "Cleaning of lexan covering board of display",    "Cleaning of Coin hopper opto sensor of TVM",    "Cleaning of Cooling fans",    "Checking and Cleaning of Cooling fan filter",    "Cleaning of BNR/BNA",    "Cleaning of Printer and printer heating head",    "Cleaning of Bank card reader",    "Cleaning of Display",    "Cleaning of Token hopper of TVM",    "Check LAN Status",    "BNA/BNR Module Test",    "Coin Dispenser Test",    "Token Dispenser Test ",    "Card Reader Test",    "LCD Test",    "PID Test",    "Printer Test /Test Print",    "Audio Test",  ];  const {;
-  toPDF, targetRef
-} = usePDF({
+};  const labels = [;    "Fixing & Alignment of all modules of TVM/RCTM ",    "Checking of all Cable connection and dressing",    "Checking Silicon sealing of TVM/RCTM Cabinet",    "Checking of any opening inside TVM/RCTM cabinet",    "Checking of Power Supply and Battery",    "Check Lubrication of all locks with silicone oil",    "Check Station ID",    "Check Device ID",    "Check Date and Time",    "Cleaning of all modules of TVM/RCTM",    "Cleaning of lexan covering board of display",    "Cleaning of Coin hopper opto sensor of TVM",    "Cleaning of Cooling fans",    "Checking and Cleaning of Cooling fan filter",    "Cleaning of BNR/BNA",    "Cleaning of Printer and printer heating head",    "Cleaning of Bank card reader",    "Cleaning of Display",    "Cleaning of Token hopper of TVM",    "Check LAN Status",    "BNA/BNR Module Test",    "Coin Dispenser Test",    "Token Dispenser Test ",    "Card Reader Test",    "LCD Test",    "PID Test",    "Printer Test /Test Print",    "Audio Test",  ];  const { toPDF, targetRef } = usePDF({
   filename: "Preventive_Maintenance_Worksheet_Tvm_Form.pdf",
 });  return (
         <>

@@ -14,10 +14,7 @@ import {
   formatDate
 } from "../../data/formatDate";const EditPMLOGBOOKMAINLINE9 = () => {
   ;
-  const navigate = useNavigate();  const dispatch = useDispatch();  const location = useLocation();  const {;
-  id
-
-} = location.state;  const afcpreventive = useSelector((state) => state.PMbm9);  const [slug, setSlug] = useState("");  const [items, setItems] = useState([]);  const itmm = afcpreventive.data.data;  useEffect(() => {
+  const navigate = useNavigate();  const dispatch = useDispatch();  const location = useLocation();  const { id } = location.state;  const afcpreventive = useSelector((state) => state.PMbm9);  const [slug, setSlug] = useState("");  const [items, setItems] = useState([]);  const itmm = afcpreventive.data.data;  useEffect(() => {
   
   dispatch(fetchData());    setItems(afcpreventive.data.data);
 

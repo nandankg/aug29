@@ -19,10 +19,7 @@ import React, {
   const pathname = window.location.pathname;  const pathSegments = pathname.split("/").filter(Boolean);  return pathSegments[pathSegments.length - 1];
 }const EditCabinetRecord = () => {
   ;
-  const navigate = useNavigate();  const location = useLocation();  const {;
-  id
-
-} = location.state;  const dispatch = useDispatch();  const cabinetrecord = useSelector((state) => state.data);  const [slug, setSlug] = useState(getLastParameter().trim());  const [items, setItems] = useState([]);  const itmm = cabinetrecord.data.data;  useEffect(() => {
+  const navigate = useNavigate();  const location = useLocation();  const { id } = location.state;  const dispatch = useDispatch();  const cabinetrecord = useSelector((state) => state.data);  const [slug, setSlug] = useState(getLastParameter().trim());  const [items, setItems] = useState([]);  const itmm = cabinetrecord.data.data;  useEffect(() => {
   
   dispatch(fetchData({
   formType: slug
@@ -42,9 +39,7 @@ import React, {
   formType:slug,value:formValues
 
 }));    // navigate("/list/ats-cabinet-maintenance-monthly");
-};  const {;
-  toPDF, targetRef
-} = usePDF({
+};  const { toPDF, targetRef } = usePDF({
   filename: "Cabinet Maintenance Record.pdf",
 });  return (
         <>

@@ -16,10 +16,7 @@ import {
   formatDate
 } from "../../data/formatDate";const EditAxleCounter = () => {
   ;
-  const navigate = useNavigate();  const location = useLocation();  const {;
-  id
-
-} = location.state || "";  const dispatch = useDispatch();  const axlecounter = useSelector((state) => state.axlecounter);  // const [items, setItems] = useState([]);  const itmm = axlecounter.data.data;  // const [slug, setSlug] = useState("");  // useEffect(() => {
+  const navigate = useNavigate();  const location = useLocation();  const { id } = location.state || "";  const dispatch = useDispatch();  const axlecounter = useSelector((state) => state.axlecounter);  // const [items, setItems] = useState([]);  const itmm = axlecounter.data.data;  // const [slug, setSlug] = useState("");  // useEffect(() => {
   
   dispatch(fetchData());    setItems(axlecounter.data.data);
 
@@ -38,10 +35,7 @@ import {
   id: fd.id || "",    date: formatDate(new Date().toString()),    time: fd.time,    ocounterno: fd.ocounterno,    ccounterno: fd.ccounterno,    axlecounterno: fd.axlecounterno,    reason: fd.reason,    signatureofsc: fd.Employ_id,    remark: fd.remark,    employee_id: fd.Employ_id,    department: fd.department,    unit: fd.unit,
 };  const [formValues, setFormValues] = useState(basicInitialValues);const handleChange = (event) => {
   ;
-  const {;
-  name, value
-
-} = event.target;    setFormValues({
+  const { name, value } = event.target;    setFormValues({
   ...formValues, [name]: value
 });
 };const handleSubmit = (event) => {

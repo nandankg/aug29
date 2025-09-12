@@ -19,10 +19,7 @@ import {
   const pathname = window.location.pathname;  const pathSegments = pathname.split("/").filter(Boolean);  return pathSegments[pathSegments.length - 1];
 }const StationEarningEdit = () => {
   ;
-  const [slug, setSlug] = useState(getLastParameter().trim());  const stationearning = useSelector((state) => state.stationearning);  const navigate = useNavigate();    const location = useLocation();    const {;
-  id
-
-} = location.state;    const dispatch = useDispatch();    const [items, setItems] = useState([]);    const itmm = stationearning.data.data;    useEffect(() => {
+  const [slug, setSlug] = useState(getLastParameter().trim());  const stationearning = useSelector((state) => state.stationearning);  const navigate = useNavigate();    const location = useLocation();    const { id } = location.state;    const dispatch = useDispatch();    const [items, setItems] = useState([]);    const itmm = stationearning.data.data;    useEffect(() => {
   
   dispatch(fetchData());      setItems(stationearning.data.data);
 
