@@ -1,0 +1,309 @@
+{
+  "timestamp": "2025-09-12T16:09:50.823Z",
+  "totalFiles": 34,
+  "fixedFiles": 34,
+  "errors": [],
+  "fixes": [
+    {
+      "file": "./src/component/TableStructureList.jsx",
+      "fixes": [
+        "Fixed import statements"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/edit/isha/Edit PREVENTIVEMAINTENACE_CC_CCHS.jsx",
+      "fixes": [
+        "Formatted single-line file with proper line breaks",
+        "Fixed export statements placement",
+        "Fixed import statements"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/edit/isha/EditAfcPreventiveHalfYearly.jsx",
+      "fixes": [
+        "Formatted single-line file with proper line breaks",
+        "Fixed export statements placement",
+        "Fixed import statements"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/edit/isha/EditPMLOGBOOKMAAINLINE9.jsx",
+      "fixes": [
+        "Formatted single-line file with proper line breaks",
+        "Fixed export statements placement",
+        "Fixed import statements"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/edit/pinki/EditAxleCounter.jsx",
+      "fixes": [
+        "Formatted single-line file with proper line breaks",
+        "Fixed export statements placement",
+        "Fixed import statements"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/edit/satya/EditAfcPreventive.jsx",
+      "fixes": [
+        "Formatted single-line file with proper line breaks",
+        "Fixed export statements placement",
+        "Fixed import statements"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/edit/satya/EditCabinetRecord.jsx",
+      "fixes": [
+        "Formatted single-line file with proper line breaks",
+        "Fixed export statements placement",
+        "Fixed import statements"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/edit/satya/EditPMList.jsx",
+      "fixes": [
+        "Formatted single-line file with proper line breaks",
+        "Fixed export statements placement",
+        "Fixed import statements"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/edit/satya/EditPMMainline.jsx",
+      "fixes": [
+        "Formatted single-line file with proper line breaks",
+        "Fixed export statements placement",
+        "Fixed import statements"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/edit/store/StationEarningEdit.jsx",
+      "fixes": [
+        "Formatted single-line file with proper line breaks",
+        "Fixed export statements placement",
+        "Fixed import statements"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/forms/store/BudgetAllotmentForm.jsx",
+      "fixes": [
+        "Formatted single-line file with proper line breaks",
+        "Fixed export statements placement",
+        "Fixed import statements"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/forms/store/NightAfcGateDrill.jsx",
+      "fixes": [
+        "Fixed export statements placement",
+        "Fixed import statements"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/reducer/AfcPreventReducer.jsx",
+      "fixes": [
+        "Formatted single-line file with proper line breaks",
+        "Fixed export statements placement",
+        "Fixed import statements"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/reducer/AuthReducer.jsx",
+      "fixes": [
+        "Fixed import statements"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/reducer/CentCompPreReducer.jsx",
+      "fixes": [
+        "Formatted single-line file with proper line breaks",
+        "Fixed export statements placement",
+        "Fixed import statements"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/reducer/ColorLightSignalMainlineReducer.jsx",
+      "fixes": [
+        "Formatted single-line file with proper line breaks",
+        "Fixed export statements placement",
+        "Fixed import statements"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/reducer/ESPQuarterlyMaintananceSignalReducer.jsx",
+      "fixes": [
+        "Formatted single-line file with proper line breaks",
+        "Fixed export statements placement",
+        "Fixed import statements"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/reducer/FirstAidRegisterReducer.jsx",
+      "fixes": [
+        "Formatted single-line file with proper line breaks",
+        "Fixed export statements placement",
+        "Fixed import statements"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/reducer/HonorariumRegReducer.jsx",
+      "fixes": [
+        "Formatted single-line file with proper line breaks",
+        "Fixed export statements placement",
+        "Fixed import statements"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/reducer/IncidentAccidentRegReducer.jsx",
+      "fixes": [
+        "Formatted single-line file with proper line breaks",
+        "Fixed export statements placement",
+        "Fixed import statements"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/reducer/LatsVduDrillReducer.jsx",
+      "fixes": [
+        "Formatted single-line file with proper line breaks",
+        "Fixed export statements placement",
+        "Fixed import statements"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/reducer/ListHonorariumReducer.jsx",
+      "fixes": [
+        "Formatted single-line file with proper line breaks",
+        "Fixed export statements placement",
+        "Fixed import statements"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/reducer/LoanRegisterReducer.jsx",
+      "fixes": [
+        "Formatted single-line file with proper line breaks",
+        "Fixed export statements placement",
+        "Fixed import statements"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/reducer/OutstandRecRegReducer.jsx",
+      "fixes": [
+        "Formatted single-line file with proper line breaks",
+        "Fixed export statements placement",
+        "Fixed import statements"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/reducer/PoliceCtdRegReducer.jsx",
+      "fixes": [
+        "Formatted single-line file with proper line breaks",
+        "Fixed export statements placement",
+        "Fixed import statements"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/reducer/TER_Entry_Reducer.jsx",
+      "fixes": [
+        "Formatted single-line file with proper line breaks",
+        "Fixed export statements placement",
+        "Fixed import statements"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/reducer/Update_Check_List_PM_occ_bcc_Red.jsx",
+      "fixes": [
+        "Formatted single-line file with proper line breaks",
+        "Fixed export statements placement",
+        "Fixed import statements"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/reducer/akshra/AgentissueReducer.jsx",
+      "fixes": [
+        "Formatted single-line file with proper line breaks",
+        "Fixed export statements placement",
+        "Fixed import statements"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/reducer/akshra/TsrrReducer.jsx",
+      "fixes": [
+        "Formatted single-line file with proper line breaks",
+        "Fixed export statements placement",
+        "Fixed import statements"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/reducer/isha/IncidentAccidentRegReducer.jsx",
+      "fixes": [
+        "Formatted single-line file with proper line breaks",
+        "Fixed export statements placement",
+        "Fixed import statements"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/reducer/satya/PMLogBookTVMReducer.jsx",
+      "fixes": [
+        "Formatted single-line file with proper line breaks",
+        "Fixed export statements placement",
+        "Fixed import statements"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/reducer/satya/PMMainlineReducer.jsx",
+      "fixes": [
+        "Formatted single-line file with proper line breaks",
+        "Fixed export statements placement",
+        "Fixed import statements"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/tables/store/StockMovementTokensview.jsx",
+      "fixes": [
+        "Formatted single-line file with proper line breaks",
+        "Fixed export statements placement",
+        "Fixed import statements"
+      ],
+      "hasBackup": true
+    },
+    {
+      "file": "./src/tables/store/StockmovementcardsView.jsx",
+      "fixes": [
+        "Formatted single-line file with proper line breaks",
+        "Fixed export statements placement",
+        "Fixed import statements"
+      ],
+      "hasBackup": true
+    }
+  ]
+}

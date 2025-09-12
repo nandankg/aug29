@@ -3,11 +3,12 @@ import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-const initialState = {
+
+const initialState = {;
   currentUser: undefined,
   loading: false,
 };
-var options = {
+var options = {;
   method: "POST",
   headers: {
     Accept: "application/json",
@@ -21,11 +22,13 @@ var options = {
 // export const deptformlist = createAsyncThunk(
   "auth/deptformlist",
   async (department) => {
+  
     const token = localStorage.getItem("accessToken");
     return fetch("https://tprosysit.com/upmrc/public/api/master/form/list", {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${token}`,
+        Authorization: `Bearer ${token
+}`,
         Accept: "application/json",
         "Content-Type": "application/json",
       },
@@ -36,33 +39,39 @@ var options = {
   }
 );
 export const formlist = createAsyncThunk("auth/formlist", async () => {
+  
   const token = localStorage.getItem("accessToken");
   return fetch("https://tprosysit.com/upmrc/public/api/master/form/list", {
     method: "POST",
     headers: {
-      Authorization: `Bearer ${token}`,
+      Authorization: `Bearer ${token
+}`,
       Accept: "application/json",
       "Content-Type": "application/json",
     },
   }).then((res) => res.json());
 });
 export const deptlist = createAsyncThunk("auth/deptlist", async () => {
+  
   const token = localStorage.getItem("accessToken");
   return fetch("https://tprosysit.com/upmrc/public/api/admin/department/list", {
     method: "GET",
     headers: {
-      Authorization: `Bearer ${token}`,
+      Authorization: `Bearer ${token
+}`,
       Accept: "application/json",
       "Content-Type": "application/json",
     },
   }).then((res) => res.json());
 });
 export const emplist = createAsyncThunk("auth/emplist", async (department) => {
+  
   const token = localStorage.getItem("accessToken");
   return fetch("https://tprosysit.com/upmrc/public/api/admin/getEmployee", {
     method: "POST",
     headers: {
-      Authorization: `Bearer ${token}`,
+      Authorization: `Bearer ${token
+}`,
       Accept: "application/json",
       "Content-Type": "application/json",
     },
@@ -72,22 +81,26 @@ export const emplist = createAsyncThunk("auth/emplist", async (department) => {
   }).then((res) => res.json());
 });
 export const adminlist = createAsyncThunk("auth/adminlist", async () => {
+  
   const token = localStorage.getItem("accessToken");
   return fetch("https://tprosysit.com/upmrc/public/api/admin/getAllAdmin", {
     method: "POST",
     headers: {
-      Authorization: `Bearer ${token}`,
+      Authorization: `Bearer ${token
+}`,
       Accept: "application/json",
       "Content-Type": "application/json",
     },
   }).then((res) => res.json());
 });
 export const liststation = createAsyncThunk("auth/liststation", async () => {
+  
   const token = localStorage.getItem("accessToken");
   return fetch("https://tprosysit.com/upmrc/public/api/master/station/list", {
     method: "POST",
     headers: {
-      Authorization: `Bearer ${token}`,
+      Authorization: `Bearer ${token
+}`,
       Accept: "application/json",
       "Content-Type": "application/json",
     },
@@ -96,11 +109,13 @@ export const liststation = createAsyncThunk("auth/liststation", async () => {
 export const Addstation = createAsyncThunk(
   "auth/Addstation",
   async (stationData) => {
+  
     const token = localStorage.getItem("accessToken");
     return fetch("https://tprosysit.com/upmrc/public/api/master/station/add", {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${token}`,
+        Authorization: `Bearer ${token
+}`,
         Accept: "application/json",
         "Content-Type": "application/json",
       },
@@ -113,11 +128,13 @@ export const Addstation = createAsyncThunk(
 export const editStation = createAsyncThunk(
   "auth/editStation",
   async (stationData) => {
+  
     const token = localStorage.getItem("accessToken");
     return fetch("https://tprosysit.com/upmrc/public/api/master/station/edit", {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${token}`,
+        Authorization: `Bearer ${token
+}`,
         Accept: "application/json",
         "Content-Type": "application/json",
       },
@@ -132,11 +149,13 @@ export const editStation = createAsyncThunk(
 export const adduser = createAsyncThunk(
   "auth/adduser",
   async (userData, thunkAPI) => {
+  
     const token = localStorage.getItem("accessToken");
     return fetch("https://tprosysit.com/upmrc/public/api/admin/user/add", {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${token}`,
+        Authorization: `Bearer ${token
+}`,
         Accept: "application/json",
         "Content-Type": "application/json",
       },
@@ -157,11 +176,13 @@ export const adduser = createAsyncThunk(
 export const editUser = createAsyncThunk(
   "auth/edituser",
   async (userData, thunkAPI) => {
+  
     const token = localStorage.getItem("accessToken");
     return fetch("https://tprosysit.com/upmrc/public/api/admin/user/edit", {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${token}`,
+        Authorization: `Bearer ${token
+}`,
         Accept: "application/json",
         "Content-Type": "application/json",
       },
@@ -183,12 +204,14 @@ export const editUser = createAsyncThunk(
 export const login = createAsyncThunk(
   "auth/login",
   async (userData, thunkAPI) => {
+  
     return fetch("https://tprosysit.com/upmrc/public/api/login", {
       method: "POST",
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
-      },
+      
+},
       body: JSON.stringify({
         loginid: userData.loginid,
         password: userData.password,
@@ -199,12 +222,14 @@ export const login = createAsyncThunk(
 export const getCurrentUser = createAsyncThunk(
   "auth/getCurrentUser",
   async (userData, thunkAPI) => {
+  
     return fetch("https://tprosysit.com/upmrc/public/api/login", {
       method: "POST",
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
-      },
+      
+},
       body: JSON.stringify({
         loginid: userData.loginid,
         password: userData.password,
@@ -215,11 +240,13 @@ export const getCurrentUser = createAsyncThunk(
 export const fetchProfile = createAsyncThunk(
   "auth/profile",
   async (userData, thunkAPI) => {
+  
     const token = localStorage.getItem("accessToken");
     return fetch("https://tprosysit.com/upmrc/public/api/profile", {
       method: "GET",
       headers: {
-        Authorization: `Bearer ${token}`,
+        Authorization: `Bearer ${token
+}`,
         Accept: "application/json",
         "Content-Type": "application/json",
       },
@@ -229,13 +256,15 @@ export const fetchProfile = createAsyncThunk(
 export const ChangePassword = createAsyncThunk(
   "auth/profile/password/change",
   async (userData, thunkAPI) => {
+  
     const token = localStorage.getItem("accessToken");
     return fetch(
       "https://tprosysit.com/upmrc/public/api/profile/password/change",
       {
         method: "GET",
         headers: {
-          Authorization: `Bearer ${token}`,
+          Authorization: `Bearer ${token
+}`,
           Accept: "application/json",
           "Content-Type": "application/json",
         },
@@ -249,11 +278,13 @@ export const ChangePassword = createAsyncThunk(
   }
 );
 export const logout = createAsyncThunk("auth/logout", async (state) => {
+  
   localStorage.removeItem("accessToken");
   localStorage.removeItem("userdata");
   state.user = null;
+
 });
-const authSlice = createSlice({
+const authSlice = createSlice({;
   name: "auth",
   initialState: {
     loading: false,
@@ -269,178 +300,258 @@ const authSlice = createSlice({
     isSuccess: "",
   },
   extraReducers: (builder) => {
+  
     // get form list
     builder.addCase(formlist.pending, (state) => {
       state.loading = true;
-    });
+    
+});
     builder.addCase(formlist.fulfilled, (state, action) => {
+  
       state.loading = false;
       state.formlist = action.payload;
-    });
+    
+});
     builder.addCase(formlist.rejected, (state, action) => {
+  
       state.loading = false;
       state.formlist = [];
       state.error = action.error.message;
       toast.error(action.error.message); // Toast for success
-    });
+    
+});
     // get dept list
     builder.addCase(deptlist.pending, (state) => {
+  
       state.loading = true;
-    });
+    
+});
     builder.addCase(deptlist.fulfilled, (state, action) => {
+  
       state.loading = false;
       state.deptlist = action.payload;
-    });
+    
+});
     builder.addCase(deptlist.rejected, (state, action) => {
+  
       state.loading = false;
       state.deptlist = [];
       state.error = action.error.message;
       toast.error(action.error.message); // Toast for success
-    });
+    
+});
     // add user
     builder.addCase(adduser.pending, (state) => {
+  
       state.loading = true;
-    });
+    
+});
     builder.addCase(adduser.fulfilled, (state, action) => {
+  
       state.loading = false;
       state.data = action.payload;
       toast.error(action.payload);
-    });
+    
+});
     builder.addCase(adduser.rejected, (state, action) => {
+  
       state.loading = false;
       toast.error(action.error.message); // Toast for success
-    });
+    
+});
     // edit user
     builder.addCase(editUser.pending, (state) => {
+  
       state.loading = true;
-    });
+    
+});
     builder.addCase(editUser.fulfilled, (state, action) => {
+  
       state.loading = false;
       state.data = action.payload;
       toast(action.payload.message); // Toast for success
-    });
+    
+});
     builder.addCase(editUser.rejected, (state, action) => {
+  
       state.loading = false;
       toast.error(action.error.message); // Toast for success
-    });
+    
+});
     // emp list
     builder.addCase(emplist.pending, (state) => {
+  
       state.loading = true;
-    });
+    
+});
     builder.addCase(emplist.fulfilled, (state, action) => {
+  
       state.loading = false;
       state.emplist = action.payload;
-      });
+      
+});
     builder.addCase(emplist.rejected, (state, action) => {
+  
       state.loading = false;
       toast.error(action.error.message); // Toast for success
-    });
+    
+});
     //  adminlist  /
     builder.addCase(adminlist.pending, (state) => {
+  
       state.loading = true;
-    });
+    
+});
     builder.addCase(adminlist.fulfilled, (state, action) => {
+  
       state.loading = false;
       state.adminlist = action.payload;
-      });
+      
+});
     builder.addCase(adminlist.rejected, (state, action) => {
+  
       state.loading = false;
       toast.error(action.error.message); // Toast for success
-    });
+    
+});
     // station list
     builder.addCase(liststation.pending, (state) => {
+  
       state.loading = true;
-    });
+    
+});
     builder.addCase(liststation.fulfilled, (state, action) => {
+  
       state.loading = false;
       state.liststation = action.payload;
-      });
+      
+});
     builder.addCase(liststation.rejected, (state, action) => {
+  
       state.loading = false;
       toast.error(action.error.message); // Toast for success
-    });
+    
+});
     // Station Add
     builder.addCase(Addstation.pending, (state) => {
+  
       state.loading = true;
-    });
+    
+});
     builder.addCase(Addstation.fulfilled, (state, action) => {
+  
       state.loading = false;
       state.data = action.payload;
       toast(action.payload.message); // Toast for success
-    });
+    
+});
     builder.addCase(Addstation.rejected, (state, action) => {
+  
       state.loading = false;
       toast.error(action.error.message); // Toast for success
-    });
+    
+});
     // station edit
     builder.addCase(editStation.pending, (state) => {
+  
       state.loading = true;
-    });
+    
+});
     builder.addCase(editStation.fulfilled, (state, action) => {
+  
       state.loading = false;
       state.data = action.payload;
       toast(action.payload.message); // Toast for success
-    });
+    
+});
     builder.addCase(editStation.rejected, (state, action) => {
+  
       state.loading = false;
       toast.error(action.error.message); // Toast for success
-    });
+    
+});
     // login
     builder.addCase(login.pending, (state) => {
+  
       state.loading = true;
-    });
+    
+});
     builder.addCase(login.fulfilled, (state, action) => {
+  
       state.loading = false;
       state.user = action.payload;
       toast(action.payload.message); // Toast for success
-    });
+    
+});
     builder.addCase(login.rejected, (state, action) => {
+  
       state.loading = false;
       toast.error(action.error.message); // Toast for success
-    });
+    
+});
     // get current user
     builder.addCase(getCurrentUser.pending, (state) => {
+  
       state.loading = true;
-    });
+    
+});
     builder.addCase(getCurrentUser.fulfilled, (state, action) => {
+  
       state.loading = false;
       state.data = action.payload;
-    });
+    
+});
     builder.addCase(getCurrentUser.rejected, (state, action) => {
+  
       state.loading = false;
       state.data = null;
       toast.error(action.error.message); // Toast for success
-    });
+    
+});
     // get profile
     builder.addCase(fetchProfile.pending, (state) => {
+  
       state.loading = true;
-    });
+    
+});
     builder.addCase(fetchProfile.fulfilled, (state, action) => {
+  
       state.loading = false;
       state.user = action.payload.data;
-    });
+    
+});
     builder.addCase(fetchProfile.rejected, (state, action) => {
+  
       state.loading = false;
       state.user = null;
       toast.error(action.error.message); // Toast for success
-    });
+    
+});
     // get profile
     builder.addCase(deptformlist.pending, (state) => {
+  
       state.loading = true;
-    });
+    
+});
     builder.addCase(deptformlist.fulfilled, (state, action) => {
+  
       state.loading = false;
       state.dform = action.payload.data;
-      });
+      
+});
     builder.addCase(deptformlist.rejected, (state, action) => {
+  
       state.loading = false;
       state.dform = null;
       toast.error(action.error.message); // Toast for success
-    });
+    
+});
     builder.addCase(logout.fulfilled, (state) => {
+  
       state.loading = false;
       state.data = null;
-    });
+    
+});
   },
 });
 export default authSlice.reducer;
