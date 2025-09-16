@@ -50,7 +50,7 @@ import {
   update_id: values.id,      formType: "checklist-and-pm-occbcc",      date: values.date,      systems: values.systems,      notes: values.Notes,      verifiedname: values.name,      employee_id: user.profileid,      department: user.department,      unit: user.unit,
 }),
 }).then((res) => res.json());
-});const Update_Check_List_PM_occ_bcc_Slice = createSlice({;
+});const Update_Check_List_PM_occ_bcc_Slice = createSlice({
   name: "data",  initialState: {
   loading: false,    data: [],    slug: "checklist-and-pm-occbcc",    error: "",    isSuccess: "",
 },  reducers: {

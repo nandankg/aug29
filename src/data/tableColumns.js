@@ -2384,7 +2384,6 @@ export const biodataregister = [
 
   { field: "workingLocation", headerName: "Working Location", isDate: false },
   { field: "workingDepartment", headerName: "Working Department", isDate: false },
-  { field: "gender", workingDepartment: "Working Department", isDate: false },
   { field: "workingWing", headerName: "Working Wing", isDate: false },
   { field: "workingPost", headerName: "Working Post", isDate: false },
   { field: "workingPostingDate", headerName: "workingPostingDate", isDate: false },

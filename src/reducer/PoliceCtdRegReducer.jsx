@@ -50,7 +50,7 @@ import {
   update_id: values.id,      formType: "police-custody-register",      date: values.date,      time: values.time,      name: values.pname,      address: values.address,      contactNo: values.contno,      handedTo: values.handoverto,      reason: values.reason,      handing_over_Memo_no: values.handovermemo,      sigofsc: user.employeeid,      remark: values.remark,      employee_id: user.profileid,      department: user.department,
 }),
 }).then((res) => res.json());
-});const PoliceCtdRegSlice = createSlice({;
+});const PoliceCtdRegSlice = createSlice({
   name: "data",  initialState: {
   loading: false,    data: [],    slug: "police-custody-register",    error: "",    isSuccess: "",
 },  reducers: {

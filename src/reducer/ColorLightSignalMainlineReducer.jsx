@@ -50,7 +50,7 @@ import {
   update_id: values.id,      formType: "color-light-miantenance",      signalno: values.signalno, // add suffix RS BS      date: values.date,      quarterly: values.quarterly,      quarterlytwo: values.quarterlytwo,      quarterlythree: values.quarterlythree,      remarks: values.remarks,      signature: user.name,      name: user.name,      designation: user.designation,      empno: user.employeeid,      countersign: user.countersign,      employee_id: user.profileid,      department: user.department,      unit: user.department,
 }),
 }).then((res) => res.json());
-});const SignalMainlineSlice = createSlice({;
+});const SignalMainlineSlice = createSlice({
   name: "data",  initialState: {
   loading: false,    data: [],    slug: "color-light-miantenance",    error: "",    isSuccess: "",
 },  reducers: {

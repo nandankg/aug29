@@ -50,7 +50,7 @@ import {
   formType: "ter-entry-register",      update_id: values.id,      date: values.date,      Name: values.name,      EmpID: values.emp_id,      DesignationDepartment: values.desg,      EntryTime: values.e_time,      PurposeOfVisit: values.purpose,      ExitTime: values.ex_time,      VisitorsSign: values.V_sign,      SignOnDuty: values.D_sign,      Remark: values.remark,      employee_id: user.profileid,      department: user.department,      unit: user.unit,
 }),
 }).then((res) => res.json());
-});const TER_Entry_Register_Slice = createSlice({;
+});const TER_Entry_Register_Slice = createSlice({
   name: "data",  initialState: {
   loading: false,    data: [],    slug: "ter-entry-register",    error: "",    isSuccess: "",
 },  reducers: {

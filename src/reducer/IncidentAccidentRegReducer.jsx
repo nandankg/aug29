@@ -50,7 +50,7 @@ import {
   formType: "crew-incident-accident",      update_id: values.id,      date: values.date,      location: values.location,      repotime: values.repotime,      train: values.train,      trainset: values.trainset,      opname: values.opname,      emp_id: values.emp_id,      rectime: values.rectime,      detension: values.detension,      sigofcc: user.employeeid,      detailincident: values.detailincident,      remark: values.remark,      Employ_id: user.profileid,      department: user.department,
 }),
 }).then((res) => res.json());
-});const incidentAcdRegSlice = createSlice({;
+});const incidentAcdRegSlice = createSlice({
   name: "data",  initialState: {
   loading: false,    data: [],    slug: "crew-incident-accident",    error: "",    isSuccess: "",
 },  reducers: {

@@ -50,7 +50,7 @@ import {
   formType: "outstanding-record-register",      update_id: values.id,      date: values.date,      station_name:values.station_name,      letter_no: values.letter_no,      operator_name: values.operator_name,      osamount: values.osamount,      emp_no: values.emp_no,      working_id: values.working_id,      tom_no: values.tom_no,      shift_no: values.shift_no,      Date_send: values.Date_send,      notgenamount: values.notgenamount,      genamount: values.genamount,      sigofsc: user.employeeid,      reason: values.reason,      detailback: values.detailback,      gremark: values.gremark,      remark: values.remark,      unit: values.unit,      Employ_id: user.employeeid,      department: user.department,
 }),
 }).then((res) => res.json());
-});const OutstandRecRegSlice = createSlice({;
+});const OutstandRecRegSlice = createSlice({
   name: "data",  initialState: {
   loading: false,    data: [],    slug: "outstanding-record-register",    error: "",    isSuccess: "",
 },  reducers: {

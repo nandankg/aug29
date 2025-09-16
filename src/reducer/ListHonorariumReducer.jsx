@@ -50,7 +50,7 @@ import {
   update_id: values.id,      formType: "list-of-honorarium-registers",      executive: values.executive,      nonexecutive: values.non_executive,      gc: values.gc,      out: values.outsrcfac,      Employ_id: user.employeeid,      department: user.department,
 }),
 }).then((res) => res.json());
-});const ListhonorariumRegRedSlice = createSlice({;
+});const ListhonorariumRegRedSlice = createSlice({
   name: "data",  initialState: {
   loading: false,    data: [],    slug: "list-of-honorarium-registers",    error: "",    isSuccess: "",
 },  reducers: {

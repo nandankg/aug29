@@ -50,7 +50,7 @@ import {
   update_id: values.id,      formType: "esp-quarterly-maintenance",      station: values.station,      date: values.date,      quarterly: values.quarterly,      remarks: values.remarks,      signature: user.signature,      name: user.name,      designation: user.designation,      empno: user.employeeid,      countersign: user.name,      employee_id: user.profileid,      department: user.department,      unit: user.department,
 }),
 }).then((res) => res.json());
-});const ESPQuarterlyMaintainanceSlice = createSlice({;
+});const ESPQuarterlyMaintainanceSlice = createSlice({
   name: "data",  initialState: {
   loading: false,    data: [],    slug: "esp-quarterly-maintenance",    error: "",    isSuccess: "",
 },  reducers: {

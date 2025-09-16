@@ -50,7 +50,7 @@ import {
   update_id: values.id,      name: values.name,      designation: values.designation,      empid: values.empid,      date1: values.date,      sign1: user.profileid,      cardno: values.cardno,      date2: values.date2,      //sign2: user.employeeid,      formType: "agent-card-registers-sdc",
 }),
 }).then((res) => res.json());
-});const agentSlice = createSlice({;
+});const agentSlice = createSlice({
   name: "data",  initialState: {
   loading: false,    data: [],    slug: "agent-card-registers-sdc",    error: "",    isSuccess: "",
 },  reducers: {

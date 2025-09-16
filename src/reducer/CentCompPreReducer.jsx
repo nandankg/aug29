@@ -52,7 +52,7 @@ import {
   update_id: values.id,      formType: "pm-logbook-yearly2-sdc",      date: values.Date,      activities: values.activities,      staff1_name: values.staff1_name,      staff1_desg: values.staff1_desg,      staff1_employee: values.staff1_id,      staff1_sign: values.staff1_sign,      staff2_name: values.staff2_name,      staff2_employee: values.staff2_id,      staff2_desg: values.staff2_desg,      staff2_sign: values.staff2_sign,      staff3_name: values.staff3_name,      staff3_desg: values.staff3_desg,      staff3_employee: values.staff3_id,      staff3_sign: values.staff3_sign,      employee_id: user.profileid,      department: user.department,      unit: user.unit,
 }),
 }).then((res) => res.json());
-});const CentCompPreRedSlice = createSlice({;
+});const CentCompPreRedSlice = createSlice({
   name: "data",  initialState: {
   loading: false,    data: [],    slug: "pm-logbook-yearly2-sdc",    error: "",    isSuccess: "",
 },  reducers: {

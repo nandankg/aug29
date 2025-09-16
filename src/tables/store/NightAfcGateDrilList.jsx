@@ -4,12 +4,10 @@ import { fetchData } from "../../reducer/redux/tableDataSlice";
 import dayjs from "dayjs";
 import ReusableFilterBar from "../../component/ReusableFilterBar";
 import TableStructure from "../../component/TableStructure";
-import EnhancedPDFExportComponent from "../../component/EnhancedPDFExportComponent";
-
 import Pagination from "../../component/Pagination";
 import { filterTableData } from "../../utils/tableUtils";
 import { nightafcgatedrill } from "../../data/tableColumns";
-import EnhancedExcelExportComponent from "../../component/EnhancedExcelExportComponent";
+import UniversalExportComponent from "../../components/UniversalExportComponent";
 function getLastParameter() {
   const pathname = window.location.pathname;
   const pathSegments = pathname.split("/").filter(Boolean);
@@ -93,22 +91,18 @@ const NightAfcGateDrillList = () => {
         slug={slug}
       />
 
-      {/* Enhanced Export Buttons */}
+      {/* Universal Export Component */}
       <div style={{ display: 'flex', gap: '10px', marginBottom: '10px' }}>
-        <EnhancedPDFExportComponent
-          contentId="section-to-export"
-          filename="NightAfcGateDrillList.pdf"
-          formName="Night AFC Gate Drill Register"
-          formId="NAFC-GDR"
-          pageSize="A4"
-          orientation="landscape"
-        />
-        <EnhancedExcelExportComponent
-          data={currentItems}
+        <UniversalExportComponent
+          data={filteredItems}
           columns={nightafcgatedrill}
-          fileName="NightAfcGateDrillList.xlsx"
+          exportType="both"
           formName="Night AFC Gate Drill Register"
-          formId="NAFC-GDR"
+          formId="night-afc-gate-drill"
+          template="maintenance"
+          includeSerialNumber={true}
+          size="medium"
+          showLabel={true}
         />
       </div>
       {/* Pagination */}

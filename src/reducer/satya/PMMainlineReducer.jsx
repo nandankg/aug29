@@ -52,7 +52,7 @@ import {
   update_id: values.id,        stn_name: values.stn_name,        date: values.date,        month: values.month,        activities1: values.activities1,        activities2: values.activities2,        activities3: values.activities3,        staff1_name: values.staff1_name,        staff1_desg: values.staff1_desg,        staff1_sign: user.employeeid,        staff2_name: values.staff2_name,        staff2_desg: values.staff2_desg,        staff2_sign: user.employeeid,        staff3_name: values.staff3_name,        staff3_desg: values.staff3_desg,        staff3_sign: user.employeeid,        formType: "pm-logbook-monthly-other-mainline",        employee_id: user.employeeid,        department: user.department,        unit: user.department,
 }),
 }  ).then((res) => res.json());
-});const pmmainlineSlice = createSlice({;
+});const pmmainlineSlice = createSlice({
   name: "data",  initialState: {
   loading: false,    data: [],    slug: "pm-logbook-monthly-other-mainline",    error: "",    isSuccess: "",
 },  reducers: {

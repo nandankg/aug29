@@ -52,7 +52,7 @@ import {
   update_id: values.id,      formType: "tsr-register",      date: values.date,      time: values.time,      detailstsr: values.detailstsr,      authority: values.authority,      reasonimposing: values.reasonimposing,      cancellation_date: values.cancellationdate,      cancellation_time: values.cancellationtime,      autcancellation: values.autcancellation,      detailafter: values.detailafter,      nameoftc: values.nameoftc,      empid: values.empid,      nameofscc: values.nameofscc,      empidofacc: values.empidofacc,      Employ_id: user.employeeid,      department: user.department,
 }),
 }).then((res) => res.json());
-});const tsrrSlice = createSlice({;
+});const tsrrSlice = createSlice({
   name: "data",  initialState: {
   loading: false,    data: [],    slug: "tsr-register",    error: "",    isSuccess: "",
 },  reducers: {

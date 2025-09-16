@@ -52,7 +52,7 @@ import {
   update_id: values.id,      frequency: "HALF YEARLY",      station: values.station,      date: values.date,      activities: values.activities,      staff1_name: values.staff1_name,      staff1_desg: values.staff1_desg,      staff1_employee: values.staff1_empno,      staff1_sign: user.employeeid,      staff2_name: values.staff2_name,      staff2_employee: values.staff2_empno,      staff2_desg: values.staff2_desg,      staff2_sign: user.employeeid,      staff3_name: values.staff3_name,      staff3_desg: values.staff3_desg,      staff3_employee: values.staff3_empno,      staff3_sign: user.employeeid,      formType: "pm-logbook-tvm-half-yearly-sdc",      employee_id: user.profileid,      department: user.department,      unit: user.department,
 }),
 }).then((res) => res.json());
-});const pmlogbookTVMSlice = createSlice({;
+});const pmlogbookTVMSlice = createSlice({
   name: "data",  initialState: {
   loading: false,    data: [],    slug: "pm-logbook-tvm-half-yearly-sdc",    error: "",    isSuccess: "",
 },  reducers: {

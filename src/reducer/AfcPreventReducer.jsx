@@ -36,7 +36,7 @@ const getUserData = () => {
   update_id: values.id,    formType: "pm-logbook-monthly-other-mainline",    station: values.stn_name,    date: values.date,    month: values.month,    activities1: values.activities1,    activities2: values.activities2,    activities3: values.activities3,    staff1_name: values.staff1_name,    staff1_desg: values.staff1_desg,    staff1_sign: values.staff1_sign,    staff2_name: values.staff2_name,    staff2_desg: values.staff2_desg,    staff2_sign: values.staff2_sign,    staff3_name: values.staff3_name,    staff3_desg: values.staff3_desg,    staff3_sign: values.staff3_sign,    employee_id: user.profileid,    department: user.department,    unit: user.unit,
 
 });
-});const AfcPreventChkformSlice = createSlice({;
+});const AfcPreventChkformSlice = createSlice({
   name: "data",  initialState: {
   loading: false,    data: [],    slug: "pm-logbook-monthly-other-mainline",    error: "",    isSuccess: "",
 },  reducers: {

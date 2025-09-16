@@ -50,7 +50,7 @@ import {
   update_id: values.id,      formType: "night_lats_vdu_drill_register",      date: values.date,      station: values.station_name,      time_from: values.tfrom,      time_to: values.tto,      result: values.result,      remarks: values.remark,      Employ_id: values.emp_id,      TCEmploy_id: values.empidTC,      name_of_tc: values.nameTC,      name_of_sc: values.namesc,      Station_name: values.Station_name,      department: user.department,
 }),
 }).then((res) => res.json());
-});const LatsVduDrillReducerSlice = createSlice({;
+});const LatsVduDrillReducerSlice = createSlice({
   name: "data",  initialState: {
   loading: false,    data: [],    slug: "night_lats_vdu_drill_register",    error: "",    isSuccess: "",
 },  reducers: {

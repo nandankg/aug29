@@ -50,7 +50,7 @@ import {
   update_id: values.id,      formType: "first-aid-register",      date: values.date,      time: values.time,      providedToName: values.name1,      providedToDesignation: values.designation1,      providedByName: values.name2,      providedByDesignation: values.designation2,      itemsConsumed: values.itemsConsumed,      employee_id: user.profileid,      department: user.department,
 }),
 }).then((res) => res.json());
-});const FirstAidRegisterSlice = createSlice({;
+});const FirstAidRegisterSlice = createSlice({
   name: "data",  initialState: {
   loading: false,    data: [],    slug: "first-aid-register",    error: "",    isSuccess: "",
 },  reducers: {

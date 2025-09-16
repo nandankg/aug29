@@ -50,7 +50,7 @@ import {
   formType: "loan-register-sdc",      update_id: values.id,      issue_date: values.date,      issue_time: values.issuetime,      item_name: values.itmname,      item_qty: values.qty,      name: values.name,      issuer_sign: values.issuersign,      return_date: values.returndate,      return_time: values.returntime,      balance_qty: values.blnqty,      return_by_sign: values.returnsign,      receiver_sign: values.receiversign,      remark: values.remark,      // change here      employee_id: user.employeeid,      department: user.department,      unit: user.unit,
 }),
 }).then((res) => res.json());
-});const LoanRegisterReducerSlice = createSlice({;
+});const LoanRegisterReducerSlice = createSlice({
   name: "data",  initialState: {
   loading: false,    data: [],    slug: "loan-register-sdc",    error: "",    isSuccess: "",
 },  reducers: {

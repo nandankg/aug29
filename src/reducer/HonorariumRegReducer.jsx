@@ -50,7 +50,7 @@ import {
   update_id: values.id,      formType: "honorarium-register",      name: values.name,      date: values.date,      emp_id: values.emp_id,      designation: values.designation,      tfrom: values.tfrom,      duration: values.duration,      tto: values.tto,      topiccovered: values.topiccovered,      classroom: values.classroom,      sign: user.employeeid,      remark: values.remark,      // change here      Employ_id: user.profileid,      department: user.department,      unit: user.unit,
 }),
 }).then((res) => res.json());
-});const honorariumRegRedSlice = createSlice({;
+});const honorariumRegRedSlice = createSlice({
   name: "data",  initialState: {
   loading: false,    data: [],    slug: "honorarium-register",    error: "",    isSuccess: "",
 },  reducers: {
